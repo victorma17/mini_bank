@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: example.micronaut
+testFramework: spock
+sourceLanguage: groovy
+buildTool: gradle
+features: [app-name, data, data-jpa, gradle, groovy, groovy-application, h2, hibernate-jpa, http-client-test, jdbc-hikari, logback, micronaut-aot, micronaut-build, netty-server, readme, serialization-jackson, shade, spock, validation, yaml, yaml-build]

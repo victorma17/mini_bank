@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.micronaut.DefaultSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-10T20:31:20" hostname="Victors-MacBook-Air.local" time="0.005">
+  <properties/>
+  <testcase name="worrking" classname="example.micronaut.DefaultSpec" time="0.005"/>
+  <system-out><![CDATA[22:31:20.427 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+22:31:20.447 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:31:20.447 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:default user=SA
+22:31:20.447 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:31:20.454 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.454 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.454 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.454 [Test worker] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table transaction (quantity bigint not null, trx_id bigint not null, wallet_destination bigint not null, wallet_source bigint not null, primary key (trx_id))
+Hibernate: create table user_bank (user_id bigint not null, user_name varchar(255) not null unique, primary key (user_id))
+Hibernate: create table wallet (amount bigint, owner_id bigint not null, wallet_id bigint not null, wallet_name varchar(255) not null unique, primary key (wallet_id))
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+22:31:20.505 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:31:20.505 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

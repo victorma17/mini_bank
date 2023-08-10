@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.micronaut.WalletControllerSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-08-10T20:31:20" hostname="Victors-MacBook-Air.local" time="0.113">
+  <properties/>
+  <testcase name="supplyAnInvalidOrderTriggersValidationFailure" classname="example.micronaut.WalletControllerSpec" time="0.018"/>
+  <testcase name="testFindNonExistingWalletReturns404" classname="example.micronaut.WalletControllerSpec" time="0.007"/>
+  <testcase name="testWalletCrudOperations" classname="example.micronaut.WalletControllerSpec" time="0.088"/>
+  <system-out><![CDATA[22:31:20.689 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+22:31:20.701 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+22:31:20.702 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn18: url=jdbc:h2:mem:default user=SA
+22:31:20.702 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+22:31:20.707 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.707 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.708 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+22:31:20.708 [Test worker] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table transaction (quantity bigint not null, trx_id bigint not null, wallet_destination bigint not null, wallet_source bigint not null, primary key (trx_id))
+Hibernate: create table user_bank (user_id bigint not null, user_name varchar(255) not null unique, primary key (user_id))
+Hibernate: create table wallet (amount bigint, owner_id bigint not null, wallet_id bigint not null, wallet_name varchar(255) not null unique, primary key (wallet_id))
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 where w1_0.wallet_id=?
+Hibernate: select next value for hibernate_sequence
+Hibernate: insert into wallet (amount,owner_id,wallet_name,wallet_id) values (?,?,?,?)
+Hibernate: select next value for hibernate_sequence
+Hibernate: insert into wallet (amount,owner_id,wallet_name,wallet_id) values (?,?,?,?)
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 where w1_0.wallet_id=?
+Hibernate: update wallet set wallet_name=?,amount=?,owner_id=? where wallet_id=?
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 where w1_0.wallet_id=?
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 fetch first ? rows only
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 fetch first ? rows only
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 fetch first ? rows only
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 order by w1_0.wallet_name desc fetch first ? rows only
+Hibernate: select w1_0.wallet_id,w1_0.amount,w1_0.owner_id,w1_0.wallet_name from wallet w1_0 offset ? rows fetch first ? rows only
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+22:31:20.858 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+22:31:20.868 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
