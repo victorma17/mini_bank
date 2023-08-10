@@ -1,3 +1,4 @@
+For english version: https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG
 
 1. Registro usuario
 
