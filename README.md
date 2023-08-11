@@ -1,5 +1,18 @@
 For english version: https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG
 
+Bienvenido a mi pequeña app demo construida con Groovy + Micronauts!
+
+Requisitos previo JDK 17
+
+Insatalación: Clona este repositorio,en la terminal / cmd ves a la carpeta principal y ejecuta: 
+./gradlew run 
+
+Para los test:
+./gradlew test
+
+
+Funciones de la aplicacion:
+
 1. Registro usuario
 
 curl -X POST -H "Content-Type: application/json" \
