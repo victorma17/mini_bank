@@ -90,6 +90,7 @@ curl -X POST -H "Content-Type: application/json" \
 Display User
 
 http://localhost:8080/users/list
+
 http://localhost:8080/users/1
 ```shell
 curl -X GET -H "Content-Type: application/json" \
@@ -110,7 +111,6 @@ curl -X PUT -H "Content-Type: application/json" \
     -d '{"wallet_id":"3", "wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
 ```
 
----
 ---
 
 ## Functions of the application (cmd in Windows):
@@ -174,6 +174,7 @@ curl -X POST -H "Content-Type: application/json" -d "{""wallet_source"":""4"", "
 Display User
 
 http://localhost:8080/users/list
+
 http://localhost:8080/users/1
 ```shell
 curl -X GET -H "Content-Type: application/json" http://localhost:8080/users/1
