@@ -1,6 +1,6 @@
 # MiniBank 🏦
 
-Welcome to my little demo app of a REST API built with `Groovy + Micronauts!` and stored in H2 memory
+Welcome to my little demo app of a REST API built with `Groovy + Micronauts!` and stored in H2 Data Base
 
 Prerequisites `JDK 17`
 
