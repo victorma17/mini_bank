@@ -31,8 +31,12 @@ curl -X POST -H "Content-Type: application/json" \
 ```
 ---
 ```shell
-curl -X POST -H "Content-Type: application/json" \ -d "{\"user_name\":\"Fran\"}" http://localhost:8080/users
+curl -X POST -H "Content-Type: application/json" \ -d "{""user_name"":""Fran""}" http://localhost:8080/users
 ```
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{""user_name"":""Luis""}' http://localhost:8080/users
+```
+
 
 
 2. Creación de cuenta (wallet)
@@ -43,6 +47,10 @@ curl -X POST -H "Content-Type: application/json" \
 ```shell 
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_name":"Luis_Wallet", "amount": "0", "owner_id": "2"}' http://localhost:8080/wallets
+```
+----
+```shell 
+curl -X POST -H "Content-Type: application/json" \ -d '{""wallet_name"":""Luis_Wallet"", ""amount": ""0"", ""owner_id"": ""2""}' http://localhost:8080/wallets
 ```
 
 3. Realización de depósito de dinero
