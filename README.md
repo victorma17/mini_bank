@@ -2,16 +2,19 @@
 
 For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG.md)
 
-Bienvenido a mi pequeña app demo de una API REST construida con Groovy + Micronauts!
+Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!`
 
-Requisitos previo JDK 17
+Requisitos previo `JDK 17`
 
 Insatalación: Clona este repositorio,en la terminal / cmd ves a la carpeta principal y ejecuta: 
+```shell
 ./gradlew run 
+```
 
 Para los test:
+```shell
 ./gradlew test
-
+```
 
 ## Funciones de la aplicacion:
 
