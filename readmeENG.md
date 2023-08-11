@@ -15,7 +15,7 @@ For the tests:
 ./gradlew test
 ```
 ##### The test results can be found at:
-/Users/YourName/mini_bank_main/build/reports/tests/test
+/Users/YourName/mini_bank_demo_main/build/reports/tests/test
 
 In a new terminal while the application is running in the Background you can execute these commands (GET them through the browser you can also execute them through the URLs)
 ### Remember that the `ids` change if you execute these statements in a different order
