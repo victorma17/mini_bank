@@ -6,7 +6,7 @@ Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micro
 
 Requisitos previo `JDK 17`
 
-Insatalación: Clona este repositorio,en la terminal / cmd ves a la carpeta principal y ejecuta:
+Insatalación: Clona este repositorio o descarga el .zip, en la terminal / cmd ves a la carpeta principal y ejecuta:
 #### *En Windows estos comandos de ejecucion en PowerShell y el resto en cmd
 ```shell
 ./gradlew run 
