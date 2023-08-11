@@ -1,6 +1,6 @@
 # Mini Bank 🏦
 
-For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG.md)
+For english version: [readmeENG](https://github.com/victorma17/mini_bank_demo/blob/main/readmeENG.md)
 
 Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!` y almacenada en H2 Data Base
 
