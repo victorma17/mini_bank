@@ -86,6 +86,7 @@ curl -X POST -H "Content-Type: application/json" \
 
 Visualización de usuario
 
+http://localhost:8080/users/list
 http://localhost:8080/users/1
 ```shell
 curl -X GET -H "Content-Type: application/json" \
