@@ -18,11 +18,12 @@ Para los test:
 
 ## Funciones de la aplicacion:
 
+En una nueva terminal mientras corre la aplicación en Background puedes ejecutar estos comandos (los GET a través del navegador también puedes ejecutarlos a través de las URL)
+
 1. Registro usuario
 
 ```shell
-curl -X POST -H "Content-Type: application/json" \
-    -d '{"user_name":"Fran"}' http://localhost:8080/users
+curl -X POST -H "Content-Type: application/json" \ -d '{"user_name":"Fran"}' http://localhost:8080/users
 ```
 ```shell
 curl -X POST -H "Content-Type: application/json" \
