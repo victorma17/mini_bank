@@ -1,1 +1,79 @@
-asdcsad
+Welcome to my little demo app built with Groovy + Micronauts!
+
+Prerequisites: JDK 17
+
+Installation: Clone this repository, in terminal / cmd go to the main folder and run:
+
+./gradlew run
+
+For the tests:
+
+./gradlew test
+
+
+Application functions:
+
+User registration
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"user_name":"Fran"}' http://localhost:8080/users
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"user_name":"Louis"}' http://localhost:8080/users
+
+Account creation (wallet)
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"wallet_name":"Luis_Wallet", "amount": "0", "owner_id": "2"}' http://localhost:8080/wallets
+
+Making a money deposit
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"wallet_source":"0", "wallet_destination": "3", "quantity": "50"}' http://localhost:8080/transactions
+
+Account visualization (wallet) --> Balance and movements (transactions)
+
+4.1 Account Balance
+
+http://localhost:8080/wallets/list
+
+http://localhost:8080/wallets/3
+
+curl -X GET -H "Content-Type: application/json"
+http://localhost:8080/wallets/3
+
+4.2 Movement of that account as origin or destination
+
+http://localhost:8080/transactions/discover/3
+
+curl -X GET -H "Content-Type: application/json"
+http://localhost:8080/transactions/discover/3
+
+Transfer from account A to account B
+curl -X POST -H "Content-Type: application/json"
+-d '{"wallet_source":"3", "wallet_destination": "4", "quantity": "25"}' http://localhost:8080/transactions
+
+curl -X POST -H "Content-Type: application/json"
+-d '{"wallet_source":"4", "wallet_destination": "3", "quantity": "10"}' http://localhost:8080/transactions
+
+** Bonus **
+
+Display User
+
+http://localhost:8080/users/1
+
+curl -X GET -H "Content-Type: application/json"
+http://localhost:8080/users/1
+
+Update user 
+
+curl -X PUT -H "Content-Type: application/json"
+-d '{"user_id":"1", "user_name":"Antonio"}' http://localhost:8080/users
+
+Update Wallet 
+
+curl -X PUT -H "Content-Type: application/json"
+-d '{"wallet_id":"3", "wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
