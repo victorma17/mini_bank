@@ -146,16 +146,14 @@ http://localhost:8080/wallets/list
 
 http://localhost:8080/wallets/3
 ```shell
-curl -X GET -H "Content-Type: application/json" \
-  http://localhost:8080/wallets/3
+curl -X GET -H "Content-Type: application/json" \ http://localhost:8080/wallets/3
 ```
 
 4.2 Movimiento de esa cuenta como origen o destino
 
 http://localhost:8080/transactions/discover/3
 ```shell
-curl -X GET -H "Content-Type: application/json" \
-  http://localhost:8080/transactions/discover/3
+curl -X GET -H "Content-Type: application/json" \ http://localhost:8080/transactions/discover/3
 ```
 
 5. Transferencia de una cuenta A a una cuenta B
@@ -172,8 +170,7 @@ Visualización de usuario
 
 http://localhost:8080/users/1
 ```shell
-curl -X GET -H "Content-Type: application/json" \
-  http://localhost:8080/users/1
+curl -X GET -H "Content-Type: application/json" \ http://localhost:8080/users/1
 ```
 
 Actualizacion de usuario
