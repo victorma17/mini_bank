@@ -16,9 +16,10 @@ Para los test:
 ./gradlew test
 ```
 
-## Funciones de la aplicacion (Terminal en macOS, para Windows en la siguiente seccion):
-
 En una nueva terminal mientras corre la aplicación en Background puedes ejecutar estos comandos (los GET a través del navegador también puedes ejecutarlos a través de las URL)
+### Recuerda que los `ids` cambian si ejecutas estas instrucciones en un orden diferente
+
+## Funciones de la aplicacion (Terminal en macOS, para Windows en la siguiente seccion):
 
 1. Registro usuario
 
@@ -29,15 +30,6 @@ curl -X POST -H "Content-Type: application/json" \ -d '{"user_name":"Fran"}' htt
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Luis"}' http://localhost:8080/users
 ```
----
-```shell
-curl -X POST -H "Content-Type: application/json" \ -d "{""user_name"":""Fran""}" http://localhost:8080/users
-```
-```shell
-curl -X POST -H "Content-Type: application/json" -d '{""user_name"":""Luis""}' http://localhost:8080/users
-```
-
-
 
 2. Creación de cuenta (wallet)
 ```shell
@@ -48,10 +40,7 @@ curl -X POST -H "Content-Type: application/json" \
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_name":"Luis_Wallet", "amount": "0", "owner_id": "2"}' http://localhost:8080/wallets
 ```
-----
-```shell 
-curl -X POST -H "Content-Type: application/json" \ -d '{""wallet_name"":""Luis_Wallet"", ""amount": ""0"", ""owner_id"": ""2""}' http://localhost:8080/wallets
-```
+
 
 3. Realización de depósito de dinero
 ```shell
@@ -111,6 +100,7 @@ Actualizacion de wallet
 curl -X PUT -H "Content-Type: application/json" \
     -d '{"wallet_id":"3", "wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
 ```
+---
 
 ## Funciones de la aplicacion (cmd en Windows):
 
