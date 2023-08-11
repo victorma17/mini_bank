@@ -1,3 +1,5 @@
+# Mini Bank 
+
 For english version: https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG
 
 Bienvenido a mi pequeña app demo construida con Groovy + Micronauts!
@@ -11,12 +13,14 @@ Para los test:
 ./gradlew test
 
 
-Funciones de la aplicacion:
+## Funciones de la aplicacion:
 
 1. Registro usuario
 
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Fran"}' http://localhost:8080/users
+```
 
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Luis"}' http://localhost:8080/users
