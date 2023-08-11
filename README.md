@@ -2,7 +2,7 @@
 
 For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG.md)
 
-Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!` y almacenada en memoria H2
+Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!` y almacenada en H2 Data Base
 
 Requisitos previo `JDK 17`
 
