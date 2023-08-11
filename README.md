@@ -29,6 +29,11 @@ curl -X POST -H "Content-Type: application/json" \ -d '{"user_name":"Fran"}' htt
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Luis"}' http://localhost:8080/users
 ```
+---
+```shell
+curl -X POST -H "Content-Type: application/json" \ -d "{\"user_name\":\"Fran\"}" http://localhost:8080/users
+```
+
 
 2. Creación de cuenta (wallet)
 ```shell
