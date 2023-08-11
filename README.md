@@ -2,7 +2,7 @@
 
 For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG.md)
 
-Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!`
+Bienvenido a mi pequeña app demo de una API REST construida con `Groovy + Micronauts!` y almacenada en memoria H2
 
 Requisitos previo `JDK 17`
 
@@ -10,11 +10,13 @@ Insatalación: Clona este repositorio,en la terminal / cmd ves a la carpeta prin
 ```shell
 ./gradlew run 
 ```
-
+#### Para reiniciar la app y borrar la BBDD simplemente Crt + C en la tarea corriendo y reejecutar otra ver el comando
 Para los test:
 ```shell
 ./gradlew test
 ```
+##### Los resultados de los test los puedes encontrar en:
+/Users/YourName/mini_bank_main/build/reports/tests/test
 
 En una nueva terminal mientras corre la aplicación en Background puedes ejecutar estos comandos (los GET a través del navegador también puedes ejecutarlos a través de las URL)
 ### Recuerda que los `ids` cambian si ejecutas estas instrucciones en un orden diferente
