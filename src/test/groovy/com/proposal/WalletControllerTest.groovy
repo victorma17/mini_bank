@@ -1,7 +1,8 @@
 package com.proposal
 
 import com.proposal.domain.Wallet
-import com.proposal.infrastructure.rest.micronaut.functions
+import com.proposal.infrastructure.rest.micronaut.functions.WalletSaveCommand
+import com.proposal.infrastructure.rest.micronaut.functions.WalletUpdateCommand
 
 import io.micronaut.core.type.Argument
 import io.micronaut.http.HttpRequest

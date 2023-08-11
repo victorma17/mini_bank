@@ -1,6 +1,7 @@
 package com.proposal
 
 import com.proposal.domain.Transaction
+import com.proposal.infrastructure.rest.micronaut.functions.TransactionSaveCommand
 
 import io.micronaut.core.type.Argument
 import io.micronaut.http.HttpRequest

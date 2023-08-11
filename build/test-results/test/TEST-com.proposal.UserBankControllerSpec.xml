@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.proposal.UserBankControllerSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-08-11T12:27:12" hostname="Victors-MacBook-Air.local" time="0.088">
+  <properties/>
+  <testcase name="supplyAnInvalidOrderTriggersValidationFailure" classname="com.proposal.UserBankControllerSpec" time="0.021"/>
+  <testcase name="testFindNonExistingUserBankReturns404" classname="com.proposal.UserBankControllerSpec" time="0.008"/>
+  <testcase name="testUserBankCrudOperations" classname="com.proposal.UserBankControllerSpec" time="0.059"/>
+  <system-out><![CDATA[14:27:12.301 [Test worker] INFO  i.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment - Established active environments: [test]
+14:27:12.315 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+14:27:12.316 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:default user=SA
+14:27:12.316 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+14:27:12.321 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+14:27:12.321 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+14:27:12.321 [Test worker] WARN  org.hibernate.orm.incubating - HHH90006001: Encountered incubating setting [hibernate.id.db_structure_naming_strategy].  See javadoc on corresponding `org.hibernate.cfg.AvailableSettings` constant for details.
+14:27:12.322 [Test worker] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table transaction (quantity bigint not null, trx_id bigint not null, wallet_destination bigint not null, wallet_source bigint not null, primary key (trx_id))
+Hibernate: create table user_bank (user_id bigint not null, user_name varchar(255) not null unique, primary key (user_id))
+Hibernate: create table wallet (amount bigint, owner_id bigint not null, wallet_id bigint not null, wallet_name varchar(255) not null unique, primary key (wallet_id))
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 where u1_0.user_id=?
+Hibernate: select next value for hibernate_sequence
+Hibernate: insert into user_bank (user_name,user_id) values (?,?)
+Hibernate: select next value for hibernate_sequence
+Hibernate: insert into user_bank (user_name,user_id) values (?,?)
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 where u1_0.user_id=?
+Hibernate: update user_bank set user_name=? where user_id=?
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 where u1_0.user_id=?
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 fetch first ? rows only
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 fetch first ? rows only
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 fetch first ? rows only
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 order by u1_0.user_name desc fetch first ? rows only
+Hibernate: select u1_0.user_id,u1_0.user_name from user_bank u1_0 offset ? rows fetch first ? rows only
+Hibernate: drop table if exists transaction cascade 
+Hibernate: drop table if exists user_bank cascade 
+Hibernate: drop table if exists wallet cascade 
+Hibernate: drop sequence if exists hibernate_sequence
+14:27:12.452 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+14:27:12.455 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

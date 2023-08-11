@@ -1,6 +1,8 @@
 package com.proposal
 
 import com.proposal.domain.UserBank
+import com.proposal.infrastructure.rest.micronaut.functions.UserSaveCommand
+import com.proposal.infrastructure.rest.micronaut.functions.UserUpdateCommand
 
 import io.micronaut.core.type.Argument
 import io.micronaut.http.HttpRequest
