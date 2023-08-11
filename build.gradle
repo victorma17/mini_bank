@@ -6,7 +6,7 @@ plugins {
 }
 
 version = "0.1"
-group = "example.micronaut"
+group = "com.proposal."
 
 repositories {
     maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/"
@@ -34,7 +34,7 @@ dependencies {
 
 
 application {
-    mainClass.set("example.micronaut.Application")
+    mainClass.set("com.proposal.infrastructure.config.micronaut.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
@@ -47,7 +47,7 @@ micronaut {
     testRuntime("spock2")
     processing {
         incremental(true)
-        annotations("example.micronaut.*")
+        annotations("com.proposal.*")
     }
     aot {
     // Please review carefully the optimizations enabled below

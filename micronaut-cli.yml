@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: example.micronaut
+defaultPackage: com.proposal.micronaut
 testFramework: spock
 sourceLanguage: groovy
 buildTool: gradle
