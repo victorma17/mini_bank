@@ -2,7 +2,7 @@
 
 For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG)
 
-Bienvenido a mi pequeña app demo construida con Groovy + Micronauts!
+Bienvenido a mi pequeña app demo de una API REST construida con Groovy + Micronauts!
 
 Requisitos previo JDK 17
 
