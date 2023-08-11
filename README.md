@@ -1,6 +1,6 @@
 # Mini Bank 
 
-For english version: https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG
+For english version: [readmeENG](https://github.com/victorma17/mini_bank_v3/blob/main/readmeENG)
 
 Bienvenido a mi pequeña app demo construida con Groovy + Micronauts!
 
@@ -21,25 +21,26 @@ Para los test:
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Fran"}' http://localhost:8080/users
 ```
-
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"user_name":"Luis"}' http://localhost:8080/users
-
+```
 
 2. Creación de cuenta (wallet)
-
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
-    
+```
+```shell 
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_name":"Luis_Wallet", "amount": "0", "owner_id": "2"}' http://localhost:8080/wallets
-
+```
 
 3. Realización de depósito de dinero
-
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_source":"0", "wallet_destination": "3", "quantity": "50"}' http://localhost:8080/transactions
-
+```
 
 4. Visualización de cuenta (wallet) --> Balance y movimientos (transactions)
 
@@ -48,27 +49,28 @@ curl -X POST -H "Content-Type: application/json" \
 http://localhost:8080/wallets/list
 
 http://localhost:8080/wallets/3
-
+```shell
 curl -X GET -H "Content-Type: application/json" \
   http://localhost:8080/wallets/3
-
+```
 
 4.2 Movimiento de esa cuenta como origen o destino
 
 http://localhost:8080/transactions/discover/3
-
+```shell
 curl -X GET -H "Content-Type: application/json" \
   http://localhost:8080/transactions/discover/3
-
+```
 
 5. Transferencia de una cuenta A a una cuenta B
-
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_source":"3", "wallet_destination": "4", "quantity": "25"}' http://localhost:8080/transactions
-
+```
+```shell
 curl -X POST -H "Content-Type: application/json" \
     -d '{"wallet_source":"4", "wallet_destination": "3", "quantity": "10"}' http://localhost:8080/transactions
-
+```
 
 
 ** Extra **
@@ -76,19 +78,19 @@ curl -X POST -H "Content-Type: application/json" \
 Visualización de usuario
 
 http://localhost:8080/users/1
-
+```shell
 curl -X GET -H "Content-Type: application/json" \
   http://localhost:8080/users/1
-
+```
 
 Actualizacion de usuario
-
+```shell
  curl -X PUT -H "Content-Type: application/json" \
     -d '{"user_id":"1", "user_name":"Antonio"}' http://localhost:8080/users
-
+```
 
 Actualizacion de wallet
-
+```shell
 curl -X PUT -H "Content-Type: application/json" \
     -d '{"wallet_id":"3", "wallet_name":"Fran_Wallet", "amount": "0", "owner_id": "1"}' http://localhost:8080/wallets
-
+```
